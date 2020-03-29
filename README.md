@@ -57,10 +57,21 @@ See `lib/webengine_kiosk.ex` for some untested options.
 work on earlier versions, but we haven't tested it). It is likely that your
 package manager already has a Qt package.
 
-On Debian or Ubuntu:
+On Debian:
 
 ```sh
 sudo apt install qtwebengine5-dev qtmultimedia5-dev qt5-default
+```
+
+On Ubuntu (LTS):
+
+LTS is shipping with QT 5.9 which can cause issues when compiling, also if using in a nerves system.
+It is recommended to install a newer version via [Stephan Binner's QT PPA](https://launchpad.net/~beineri)
+
+```sh
+# as intructed in the PPA to set envionment
+source /opt/qt514/bin/qt514-env.sh
+mix compile
 ```
 
 On OSX:
