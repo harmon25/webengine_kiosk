@@ -63,13 +63,13 @@ On Debian:
 sudo apt install qtwebengine5-dev qtmultimedia5-dev qt5-default
 ```
 
-On Ubuntu (LTS):
+On Ubuntu 18.04 (LTS):
 
 LTS is shipping with QT 5.9 which can cause issues when compiling, also if using in a nerves system.
 It is recommended to install a newer version via [Stephan Binner's QT PPA](https://launchpad.net/~beineri)
 
 ```sh
-# as intructed in the PPA to set envionment
+# as instructed in the PPA to set envionment
 source /opt/qt514/bin/qt514-env.sh
 mix compile
 ```
